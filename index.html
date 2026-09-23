@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BEcaRi warKAH - Kantor Pertanahan Tabalong</title>
+    <title>Pintasan Link Saya</title>
+    <!-- FontAwesome untuk Ikon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -25,7 +26,7 @@
 
         .container {
             width: 100%;
-            max-width: 600px;
+            max-width: 480px;
             text-align: center;
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(10px);
@@ -36,8 +37,8 @@
         }
 
         .profile-img {
-            width: 90px;
-            height: 90px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             object-fit: cover;
             border: 3px solid #38bdf8;
@@ -53,27 +54,43 @@
         p.bio {
             font-size: 0.9rem;
             color: #94a3b8;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
-        .sheet-wrapper {
-            width: 100%;
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            text-decoration: none;
             border-radius: 12px;
-            overflow: hidden;
-            background: #ffffff;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            margin-bottom: 15px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.05);
         }
 
-        /* Tinggi 140px disesuaikan agar pas dengan rentang A10:C10 */
-        .sheet-frame {
-            width: 100%;
-            height: 140px; 
-            border: none;
+        .link-card:hover {
+            background: #38bdf8;
+            color: #0f172a;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(56, 189, 248, 0.4);
+        }
+
+        .link-card i {
+            font-size: 1.2rem;
         }
 
         footer {
-            margin-top: 15px;
+            margin-top: 30px;
             font-size: 0.8rem;
             color: #64748b;
         }
@@ -82,20 +99,38 @@
 <body>
 
     <div class="container">
-        <!-- Foto Profil -->
-        <img class="profile-img" src="https://lh3.googleusercontent.com/d/1Gd_rMNJyktt1pHLVNSC_WmtX1tjPHRFR" alt="Logo">
+        <!-- Foto Profil (Link Google Drive diubah ke direct format) -->
+        <img class="profile-img" src="https://lh3.googleusercontent.com/d/1Gd_rMNJyktt1pHLVNSC_WmtX1tjPHRFR" alt="Foto Profil">
 
-        <!-- Judul -->
+        <!-- Nama & Deskripsi -->
         <h1>Aplikasi Pengelola Arsip<br>Kantor Pertanahan Tabalong</h1>
         <p class="bio">Welcome To Aplikasi BERKAH (BEcaRi warKAH)</p>
 
-        <!-- Google Sheet Rentang A10:C10 -->
-        <div class="sheet-wrapper">
-            <iframe class="sheet-frame" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTLXvjA5GsbRKW0CK9y9GvL4kRc0fMF1ucofxcHYY5hTdm7I95BDj9EGNnT0_Ar-n6sRvKtZ2fT35Sv/pubhtml?gid=1081354575&amp;single=true&amp;widget=false&amp;headers=false&amp;range=A10:C10"></iframe>
+        <!-- Daftar Link -->
+        <div class="links-container">
+            <a href="https://docs.google.com/spreadsheets/d/1p0KC3xlB0xooqBsJ0diJEOdOohKJ52APfvWym1wFURQ/edit?gid=1081354575#gid=1081354575" target="_blank" class="link-card">
+                <i class="fas fa-file-excel"></i> BEcaRi warKAH (Spreadsheet)
+            </a>
+
+            <a href="https://tiktok.com/@username_kamu" target="_blank" class="link-card">
+                <i class="fab fa-tiktok"></i> TikTok
+            </a>
+
+            <a href="https://wa.me/6281234567890" target="_blank" class="link-card">
+                <i class="fab fa-whatsapp"></i> WhatsApp Saya
+            </a>
+
+            <a href="https://youtube.com/@username_kamu" target="_blank" class="link-card">
+                <i class="fab fa-youtube"></i> Channel YouTube
+            </a>
+
+            <a href="https://websitekamu.com" target="_blank" class="link-card">
+                <i class="fas fa-globe"></i> Website Utama
+            </a>
         </div>
 
         <footer>
-            &copy; 2026 Kantor Pertanahan Tabalong &bull; BEcaRi warKAH
+            &copy; 2026 Dipublikasikan via GitHub Pages
         </footer>
     </div>
 
