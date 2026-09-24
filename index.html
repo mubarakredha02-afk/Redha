@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pintasan Link Saya</title>
+    <title>Aplikasi BERKAH - Kantor Pertanahan Kabupaten Tabalong</title>
+
+    <!-- Meta SEO & Social Sharing -->
+    <meta name="description" content="Aplikasi Pengelola Arsip Kantor Pertanahan Kabupaten Tabalong - BEcaRi warKAH">
+    <meta property="og:title" content="Aplikasi BERKAH - Kantah Tabalong">
+    <meta property="og:description" content="Pintasan link pengelola arsip dan layanan Kantor Pertanahan Kabupaten Tabalong.">
+    <meta property="og:image" content="https://lh3.googleusercontent.com/d/1Gd_rMNJyktt1pHLVNSC_WmtX1tjPHRFR">
+
     <!-- FontAwesome untuk Ikon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
         * {
             margin: 0;
@@ -14,11 +22,20 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+
         body {
-            /* Latar belakang diperbarui dengan foto gedung dan overlay gelap tipis agar teks tetap terbaca */
-            background: linear-gradient(rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.4)), 
-                        url('https://lh3.googleusercontent.com/d/1u6PhXcRN61vZ5N1mPUpT73ODFBkOaI43') no-repeat center center fixed;
+            /* Setting agar foto latar belakang selalu FULL dan terpusat */
+            background-image: linear-gradient(rgba(15, 23, 42, 0.45), rgba(15, 23, 42, 0.45)), 
+                              url('https://lh3.googleusercontent.com/d/1u6PhXcRN61vZ5N1mPUpT73ODFBkOaI43');
+            background-position: center center;
+            background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+            
             color: #ffffff;
             min-height: 100vh;
             display: flex;
@@ -31,7 +48,7 @@
             width: 100%;
             max-width: 480px;
             text-align: center;
-            background: rgba(15, 23, 42, 0.55);
+            background: rgba(15, 23, 42, 0.65);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
             padding: 30px 20px;
@@ -109,7 +126,7 @@
 
     <div class="container">
         <!-- Foto Profil -->
-        <img class="profile-img" src="https://lh3.googleusercontent.com/d/1Gd_rMNJyktt1pHLVNSC_WmtX1tjPHRFR" alt="Foto Profil">
+        <img class="profile-img" src="https://lh3.googleusercontent.com/d/1Gd_rMNJyktt1pHLVNSC_WmtX1tjPHRFR" alt="Logo Kantor Pertanahan Tabalong">
 
         <!-- Nama & Deskripsi -->
         <h1>Aplikasi Pengelola Arsip<br>Kantor Pertanahan Kabupaten Tabalong</h1>
@@ -121,8 +138,8 @@
                 <i class="fas fa-file-excel"></i> BEcaRi warKAH (Spreadsheet)
             </a>
 
-            <a href="https://docs.google.com/forms/d/1K13QhLD7HG2HkBaaanWqHLrgLRqjudUdOUN1UPvTAIk/edit?usp=drive_web&ouid=111035568398373975578">
-                <i class="fab fa-tiktok"></i> Link Entri DI 208 (Google Form)
+            <a href="https://docs.google.com/forms/d/1K13QhLD7HG2HkBaaanWqHLrgLRqjudUdOUN1UPvTAIk/edit?usp=drive_web&ouid=111035568398373975578" target="_blank" rel="noopener noreferrer" class="link-card">
+                <i class="fas fa-file-alt"></i> Link Entri DI 208 (Google Form)
             </a>
 
             <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" class="link-card">
@@ -139,7 +156,7 @@
         </div>
 
         <footer>
-            &copy; 2026 Dipublikasikan via GitHub Pages
+            &copy; 2026 Kantor Pertanahan Kabupaten Tabalong
         </footer>
     </div>
 
